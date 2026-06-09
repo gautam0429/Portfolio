@@ -1,0 +1,143 @@
+﻿.work-section h2 {
+  padding-top: 100px;
+  margin-top: 0;
+  font-size: 70px;
+  font-weight: 500;
+}
+.work-section h2 > span {
+  color: var(--accentColor);
+}
+.work-section {
+  transition: 0.3s;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  will-change: transform;
+  background-color: var(--backgroundColor);
+  z-index: 5;
+  overflow: hidden;
+}
+.work-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-content: stretch;
+  position: relative;
+}
+.work-flex {
+  width: max-content;
+  display: flex !important;
+  flex: 1;
+  position: relative;
+  padding-right: 10vw;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.work-box {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  box-sizing: border-box;
+  border-right: 1px solid #363636;
+  flex-shrink: 0;
+  gap: 30px;
+  justify-content: flex-start;
+  height: 100%;
+}
+.work-flex .work-box:nth-child(even) {
+  flex-direction: column-reverse;
+}
+.work-flex::before,
+.work-flex::after {
+  content: '';
+  width: calc(50000vw);
+  height: 1px;
+  background-color: #363636;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.work-flex::after {
+  top: 100%;
+}
+.work-title {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.work-title > div {
+  text-align: right;
+}
+.work-title h3 {
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  font-weight: 600;
+}
+.work-info h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+.work-details {
+  color: #adacac;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 200;
+}
+.work-details p {
+  margin: 5px 0;
+  line-height: 1.4;
+  color: #adacac;
+}
+.work-role {
+  color: var(--accentColor) !important;
+  margin-top: 10px !important;
+  font-weight: 500 !important;
+}
+.work-info p {
+  font-weight: 200;
+  color: #adacac;
+  margin: 0;
+  margin-top: 3px;
+}
+.work-image {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.work-image-in {
+  position: relative;
+}
+.work-image img {
+  max-width: 100%;
+  max-height: 350px;
+}
+@media only screen and (max-height: 900px) {
+  .work-image img {
+    max-height: 250px;
+  }
+  .work-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .work-section h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    padding-top: 70px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .work-box {
+    width: 450px;
+    padding: 50px;
+  }
+  .work-section h2 {
+    font-size: 50px;
+  }
+}
