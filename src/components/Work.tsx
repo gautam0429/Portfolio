@@ -1,6 +1,5 @@
 ﻿import { useRef } from 'react';
 import './styles/Work.css';
-import WorkImage from './WorkImage';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -97,7 +96,6 @@ const Work = () => {
               <p>React js, MongoDB, Node.js, Express.js, Web sockets, CI/CD</p>
             </div>
           </div>
-          </div>
 
           {/* Project 03 */}
           <div className='work-box'>
@@ -136,7 +134,6 @@ const Work = () => {
               <h4>Tech Stack</h4>
               <p>MongoDB, Express js, React js, Next js, HTML, CSS</p>
             </div>
-            <WorkImage image='/images/placeholder.webp' alt='Appointment System' />
           </div>
 
           {/* Project 05 */}
@@ -156,7 +153,6 @@ const Work = () => {
               <h4>Tech Stack</h4>
               <p>HTML, CSS, JavaScript, React Js</p>
             </div>
-            <WorkImage image='/images/placeholder.webp' alt='Sundown-Studio' />
           </div>
 
         </div>
