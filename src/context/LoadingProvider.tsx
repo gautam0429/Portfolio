@@ -19,6 +19,19 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
   const [isLoading, setIsLoading] = useState(true);
   const [loading, setLoading] = useState(0);
 
+  useEffect(() => {
+    let percent = 0;
+    const interval = setInterval(() => {
+      if (percent < 90) {
+        percent += Math.random() * 2;
+        setLoading(Math.floor(percent));
+      } else {
+        clearInterval(interval);
+      }
+    }, 200);
+    return () => clearInterval(interval);
+  }, []);
+
   const value = {
     isLoading,
     setIsLoading,

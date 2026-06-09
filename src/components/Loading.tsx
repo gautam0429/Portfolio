@@ -80,7 +80,7 @@ const Loading = ({ percent }: { percent: number }) => {
               </div>
               <div className="loading-box"></div>
             </div>
-            <div className="loading-content2">
+            <div className="loading-content2" onClick={() => setIsLoading(false)} style={{ cursor: 'pointer' }}>
               <span>Welcome</span>
             </div>
           </div>
