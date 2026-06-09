@@ -75,7 +75,6 @@ const Work = () => {
               <h4>Tech Stack</h4>
               <p>Hardware, Wireless Communication, Thermal Imaging, Sensors</p>
             </div>
-            <WorkImage image='/images/placeholder.webp' alt='Rover for Rescue' />
           </div>
 
           {/* Project 02 */}
@@ -97,7 +96,7 @@ const Work = () => {
               <h4>Tech Stack</h4>
               <p>React js, MongoDB, Node.js, Express.js, Web sockets, CI/CD</p>
             </div>
-            <WorkImage image='/images/placeholder.webp' alt='Uber Clone' />
+          </div>
           </div>
 
           {/* Project 03 */}
@@ -118,7 +117,6 @@ const Work = () => {
               <h4>Tech Stack</h4>
               <p>HTML, CSS, Reactjs</p>
             </div>
-            <WorkImage image='/images/placeholder.webp' alt='Explore Heritage' />
           </div>
 
           {/* Project 04 */}
